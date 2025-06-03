@@ -78,12 +78,6 @@ GitHub do projeto: [https://github.com/saylonrb/Projeto-Loja-Virtual-Decrease](h
 
 ---
 
-## 📝 Licença
-
-Este projeto é de uso educacional e pode ser usado livremente para fins de aprendizado.
-
----
-
 ## ✅ Conclusão
 
 A Decrease é um ótimo exemplo de como utilizar o **Bootstrap 5** de forma eficiente com **componentes responsivos**, **estilo personalizado** e estrutura bem organizada. Ideal para quem está começando com desenvolvimento front-end e deseja montar projetos completos.
