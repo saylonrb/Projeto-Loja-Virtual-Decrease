@@ -1,6 +1,6 @@
 # 🛒 Decrease - Loja Virtual Fitness
 
-Projeto desenvolvido como exemplo de um **e-commerce responsivo** voltado ao público fitness. Utilizamos **HTML5**, **Bootstrap 5** e **CSS personalizado** para criar um site moderno, funcional e visualmente atrativo.
+Projeto desenvolvido como exemplo de um **e-commerce responsivo** voltado ao público fitness. Utilizamos **HTML5**, **Bootstrap 5** e **CSS personalizado** para criar um site moderno e visualmente atrativo.
 
 ---
 
@@ -15,7 +15,6 @@ A proposta do projeto é demonstrar a aplicação de tecnologias web com boas pr
 
 ---
 
----
 
 ## 🧱 Estrutura de Arquivos
 
@@ -23,7 +22,7 @@ A proposta do projeto é demonstrar a aplicação de tecnologias web com boas pr
 📦 Projeto-Loja-Virtual-Decrease
 ├── index.html                  # Página principal da loja
 ├── pages/
-│   ├── sobre.html              # Página institucional
+│   ├── sobre.html              # Página sobre
 │   ├── login.html              # Tela de login do usuário
 │   ├── cadastro.html           # Tela de criação de conta
 │   └── carrinho.html           # Página de carrinho de compras
@@ -69,12 +68,6 @@ GitHub do projeto: [https://github.com/saylonrb/Projeto-Loja-Virtual-Decrease](h
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [Bootstrap 5](https://getbootstrap.com)
 - [Bootstrap Icons](https://icons.getbootstrap.com)
-
----
-
-## 📬 Contato fictício
-
-📧 decreaseoficial@gmail.com.br
 
 ---
 
