@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="./assets/css/custom.css" rel="stylesheet">
+    <title>Decrease</title>
+</head>
+
+<body style="min-width: 372px;" class="bg-dark">
+
+    <!--Barra de Navegação-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+            <div
+                class="container-xxl d-flex flex-wrap justify-content-center justify-content-sm-between col-12 col-sm-12">
+
+                <!-- Logo-->
+                <a class="navbar-brand px-0 mx-0 my-0 text-center col-12 col-sm-3 text-sm-start" href="./index.html">
+                    <img src="./assets/imagens/Logo.png" alt="logo"></a>
+                <div class="w-100 d-flex d-sm-none col-0"></div>
+
+                <!-- Barra de busca  no centro-->
+                <form class="d-flex ps-3 ps-md-0 pe-sm-2 me-3 mx-sm-0  my-0 w-50" role="search">
+                    <input class="form-control rounded-end-0" type="search" placeholder="Encontre oque você procura" aria-label="Search">
+                    <button class="btn btn-outline-light rounded-start-0" type="submit">
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                            <use xlink:href="/bootstrap-icons.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Botão para o menu suspenso quando a tela for media-->
+                <button class="navbar-toggler text-white my-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuNavBar" aria-controls="menuNavBar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span>
+                        <svg class="bi" width="24" height="24" fill="currentColor">
+                            <use xlink:href="/bootstrap-icons.svg#list"></use>
+                        </svg>
+                    </span>
+                </button>
+
+                <!-- Menu-->
+                <div class="collapse navbar-collapse justify-content-end ms-1" id="menuNavBar">
+                    <ul class="navbar-nav  text-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/login.html">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./pages/carrinho.html">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#cart-fill"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Conteúdo da loja-->
+    <main class="mb-5">
+        <!--Componente Carrosel-->
+        <div class="container-xxl p-0">
+            <div  id="carrosel-principal" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <img src="assets/imagens/Banner.png" alt="" class="img-fluid d-block w-100">
+                    </div>
+                    <div class="carousel-item text-center" data-bs-interval="2500">
+                        <img src="assets/imagens/banner2.png" alt="" class="img-fluid d-block w-100">
+                    </div>
+                    <div class="carousel-item text-center" data-bs-interval="2500">
+                        <img src="assets/imagens/banner3.png" alt="" class="img-fluid d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosel-principal" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosel-principal" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--Seção de Produtos de suplementos-->
+        <section class="container-xxl px-4 mt-5 pt-4">
+            <h1 class="text-center my-5 fw-bold text-white">PRODUTOS MAIS VENDIDOS</h1>
+            <div class="row gy-5 gx-3 justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 h-100 shadow">
+                        <a href="#" class="position-absolute end-0 p-2 text-black">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./assets/Produtos/suplementos (1).png" alt="" class="card-img-top mb-3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-4">MAX TITANIUM CREATINA - 300G</h5>
+                            <div class="mt-auto">
+                                <h2 class="card-subtitle">R$78,90</h2>
+                                <button class="btn btn-verde-abacate mt-3 fw-medium w-100">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 h-100 shadow">
+                        <a href="#" class="position-absolute end-0 p-2 text-black">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./assets/Produtos/suplementos (2).png" alt="" class="card-img-top mb-3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-4">PRÉ WORKOUT MORANGO - 300G</h5>
+                            <div class="mt-auto">
+                                <h2 class="card-subtitle">R$65,90</h2>
+                                <button class="btn btn-verde-abacate mt-3 fw-medium w-100">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 h-100 shadow">
+                        <a href="#" class="position-absolute end-0 p-2 text-black">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./assets/Produtos/suplementos (3).png" alt="" class="card-img-top mb-3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-4">BLACK SKULL CREATINE - 900G</h5>
+                            <div class="mt-auto">
+                                <h2 class="card-subtitle">R$92,56</h2>
+                                <button class="btn btn-verde-abacate mt-3 fw-medium w-100">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 h-100 shadow">
+                        <a href="#" class="position-absolute end-0 p-2 text-black">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./assets/Produtos/suplementos (4).png" alt="" class="card-img-top mb-3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-4">MULTIVITAMIN 60 TABLETES</h5>
+                            <div class="mt-auto">
+                                <h2 class="card-subtitle">R$60,38</h2>
+                                <button class="btn btn-verde-abacate mt-3 fw-medium w-100">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 h-100 shadow">
+                        <a href="#" class="position-absolute end-0 p-2 text-black">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./assets/Produtos/suplementos (5).png" alt="" class="card-img-top mb-3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-4">ÉVORA XT DARKNESS - 300G</h5>
+                            <div class="mt-auto">
+                                <h2 class="card-subtitle">R$108,72</h2>
+                                <button class="btn btn-verde-abacate mt-3 fw-medium w-100">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 h-100 shadow">
+                        <a href="#" class="position-absolute end-0 p-2 text-black">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./assets/Produtos/suplementos (6).png" alt="" class="card-img-top mb-3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-4">MASS TITANIUM REFIL 3KG</h5>
+                            <div class="mt-auto">
+                                <h2 class="card-subtitle">R$89,90</h2>
+                                <button class="btn btn-verde-abacate mt-3 fw-medium w-100">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 h-100 shadow">
+                        <a href="#" class="position-absolute end-0 p-2 text-black">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./assets/Produtos/suplementos (7).png" alt="" class="card-img-top mb-3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-4">100% WHEY REFIL - 900G</h5>
+                            <div class="mt-auto">
+                                <h2 class="card-subtitle">R$99,00</h2>
+                                <button class="btn btn-verde-abacate mt-3 fw-medium w-100">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card p-1 h-100 shadow">
+                        <a href="#" class="position-absolute end-0 p-2 text-black">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <img src="./assets/Produtos/suplementos (8).png" alt="" class="card-img-top mb-3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-4">MONSTER ULTRA 473ML - UNIDADE</h5>
+                            <div class="mt-auto">
+                                <h2 class="card-subtitle">R$9,89</h2>
+                                <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+            <!--Seção de Roupas-->
+            <section class="container-xxl px-4 my-5 pt-4">
+                <h1 class="text-center my-5 fw-bold text-uppercase text-white">Moda</h1>
+                <div class="row gy-5 gx-3 justify-content-center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/roupas (1).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">MACAQUINHO DECREASE UNDER</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$119,90</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/roupas (2).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">CAMISETA DECREASE AZUL</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$89,90</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/roupas (3).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">CAMISA DE COMPRESSÃO - M</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$79,99</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/roupas (4).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">CALÇA LEG DECREASE FEMININA </h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$102,40</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/roupas (5).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">CAMISA DE COMPRESSÃO - F </h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$79,70</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/roupas (6).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">REGATA DECREASE GIP PRETO </h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$68,70</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/roupas (7).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">OVERSIZED DECREASE PRETO</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$119,90</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/roupas (8).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">MOLETOM DECREASE PRETO</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$189,90</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--Seção de Acessórios-->
+            <section class="container-xxl px-4 my-5 pt-4">
+                <h1 class="text-center my-5 fw-bold text-uppercase text-white">Acessórios</h1>
+                <div class="row gy-5 gx-3 justify-content-center">
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/acessorios (1).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">CINTURÃO DE MUSCULAÇÃO MUVIN</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$159,90</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/acessorios (2).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">PROTETOR PALMAR</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$35,90</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/acessorios (3).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">COQUETELEIRA PREMIUM PRO</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$49,90</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card p-1 h-100">
+                            <a href="#" class="position-absolute end-0 p-2 text-black">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#heart"></use>
+                                </svg>
+                            </a>
+                            <img src="./assets/Produtos/acessorios (4).png" alt="" class="card-img-top">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title mb-4">PAR STRAP</h5>
+                                <div class="mt-auto">
+                                    <h2 class="card-subtitle">R$27,90</h2>
+                                    <button class="btn btn-verde-abacate fw-medium mt-3 w-100">VER PRODUTO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!--Rodapé da Loja-->
+    <footer class="border-top position-bottom-0 text-muted bg-light">
+        <div class="container row  mx-auto pt-5 px-4 gx-5">
+            <div class="col-12 col-lg-3 col-md-4">
+                <img src="./assets/imagens/Logo.png" alt="" class="img-fluid">
+                <p>A DEACRESE é uma loja online voltada ao público fitness, um projeto para demostrar a utilização do
+                    Bootstrap 5 para garantir responsividade e um visual moderno.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Ajuda e Suporte</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Conta</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Troca ou Devoluções</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Sobre Entrega</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Política de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Desenvolvedores</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Emanuel Frankielson</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Hanrry Julio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Italo Dannyel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Saylon Batista</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Fale Conosco</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <p>Decreaseofical@gmail.com.br</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container row  mx-auto  justify-content-center">
+            <div class="col-12 col-md-6">
+                <img src="./assets/imagens/formas de pagamento.png" alt="" class=" img-fluid p-4 align-self-center">
+            </div>
+            <div class="col-12 col-md-6 text-center align-self-center text-nowrap">
+                <p>&copy; 2025 - Todos os direitos Reservados a Decrease</p>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

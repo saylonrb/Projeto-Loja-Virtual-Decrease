@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <title>Decrease</title>
+</head>
+
+<body style="min-width: 372px; box-sizing: border-box;" class="bg-dark">
+
+     <!--Barra de Navegação-->
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+          <div class="container-xxl d-flex flex-wrap justify-content-center justify-content-sm-between col-12 col-sm-12">
+              
+              <!-- Logo-->
+              <a class="navbar-brand px-0 mx-0 my-0 text-center col-12 col-sm-3 text-sm-start" href="../index.html">
+                  <img src="../assets/imagens/Logo.png" alt="logo"></a>
+              <div class="w-100 d-flex d-sm-none col-0"></div>
+              <!-- Barra de busca  no centro-->
+              <form class="d-flex ps-3 ps-md-0 pe-sm-2 me-3 mx-sm-0  my-0 w-50" role="search">
+                  <input class="form-control rounded-end-0" type="search" placeholder="Encontre oque você procura" aria-label="Search">
+                  <button class="btn btn-outline-light rounded-start-0" type="submit">
+                      <svg class="bi" width="20" height="20" fill="currentColor">
+                      <use xlink:href="/bootstrap-icons.svg#search"></use></svg>
+                  </button>
+              </form>
+              <!-- Botão para o menu suspenso quando a tela for media-->
+              <button class="navbar-toggler text-white my-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavBar" aria-controls="menuNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span>
+                      <svg class="bi" width="24" height="24" fill="currentColor">
+                          <use xlink:href="/bootstrap-icons.svg#list"></use>
+                      </svg>
+                  </span>
+              </button>
+
+              <!-- Menu a esquerda-->
+              <div class="collapse navbar-collapse justify-content-end ms-1" id="menuNavBar">
+                  <ul class="navbar-nav ms-auto text-center"> 
+                      <li class="nav-item">
+                          <a class="nav-link text-white" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white" href="../pages/login.html">Entrar</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white" href="../pages/sobre.html">Sobre</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white" href="../pages/carrinho.html">
+                              <svg class="bi" width="24" height="24" fill="currentColor">
+                                  <use xlink:href="/bootstrap-icons.svg#cart-fill"></use>
+                              </svg>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <main class="p-5">
+      <div class="container my-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="card shadow   bg-dark border-5 border-verde-abacate border-opacity-50">
+          <div class="card-body">
+            <h2 class="card-title text-center text-white mb-4 fw-bold">Crie Sua Conta</h2>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label text-white">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail@gmail.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="nome" class="form-label text-white">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="senha" class="form-label text-white">Senha</label>
+                  <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="confirmar" class="form-label text-white">Confirmar Senha</label>
+                  <input type="password" class="form-control" id="confirmar" placeholder="Digite sua senha novamente" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="cpf" class="form-label text-white">CPF</label>
+                  <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="sexo" class="form-label text-white">Sexo</label>
+                  <select class="form-select" id="sexo" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="nascimento" class="form-label text-white">Data de Nascimento</label>
+                  <input type="date" class="form-control" id="nascimento" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="celular" class="form-label text-white">Celular</label>
+                  <input type="tel" class="form-control" id="celular" placeholder="(00)0000-0000" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="endereco" class="form-label text-white">Endereço</label>
+                <input type="text" class="form-control" id="endereco" placeholder="Digite seu endereço" required>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-verde-abacate fw-bold">Criar Conta</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <footer class="border-top text-muted position-bottom-0 bg-light">
+        <div class="container row  mx-auto pt-5 px-4 gx-5">
+            <div class="col-12 col-lg-3 col-md-4">
+                <img src="../assets/imagens/Logo.png" alt="" class="img-fluid">
+                <p>A DEACRESE é uma loja online voltada ao público fitness, um projeto para demostrar a utilização do Bootstrap 5 para garantir responsividade e um visual moderno.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Ajuda e Suporte</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Conta</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Troca ou Devoluções</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Sobre Entrega</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Política de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Desenvolvedores</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Emanuel Frankielson</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Hanrry Julio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Italo Dannyel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Saylon Batista</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Fale Conosco</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <p>Decreaseofical@gmail.com.br</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container row  mx-auto  justify-content-center">
+            <div class="col-12 col-md-6">
+                <img src="../assets/imagens/formas de pagamento.png" alt="" class=" img-fluid p-4 align-self-center">
+            </div>
+            <div class="col-12 col-md-6 my-auto text-center align-self-center text-nowrap">
+                <p>&copy; 2025 - Todos os direitos Reservados a Decrease</p>
+            </div>
+        </div>
+  </footer>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>    
+</body>
+</html>

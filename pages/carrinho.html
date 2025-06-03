@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <title>Decrease</title>
+</head>
+
+<body style="min-width: 372px; box-sizing: border-box;" class="bg-dark">
+
+     <!--Barra de Navegação-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+            <div class="container-xxl d-flex flex-wrap justify-content-center justify-content-sm-between col-12 col-sm-12">
+                
+                <!-- Logo-->
+                <a class="navbar-brand px-0 mx-0 my-0 text-center col-12 col-sm-3 text-sm-start" href="../index.html">
+                    <img src="../assets/imagens/Logo.png" alt="logo"></a>
+                <div class="w-100 d-flex d-sm-none col-0"></div>
+                <!-- Barra de busca  no centro-->
+                <form class="d-flex ps-3 ps-md-0 pe-sm-2 me-3 mx-sm-0  my-0 w-50" role="search">
+                    <input class="form-control rounded-end-0" type="search" placeholder="Encontre oque você procura" aria-label="Search">
+                    <button class="btn btn-outline-light rounded-start-0" type="submit">
+                        <svg class="bi" width="20" height="20" fill="currentColor">
+                        <use xlink:href="/bootstrap-icons.svg#search"></use></svg>
+                    </button>
+                </form>
+                <!-- Botão para o menu suspenso quando a tela for media-->
+                <button class="navbar-toggler text-white my-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavBar" aria-controls="menuNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>
+                        <svg class="bi" width="24" height="24" fill="currentColor">
+                            <use xlink:href="/bootstrap-icons.svg#list"></use>
+                        </svg>
+                    </span>
+                </button>
+
+                <!-- Menu a esquerda-->
+                <div class="collapse navbar-collapse justify-content-end ms-1" id="menuNavBar">
+                    <ul class="navbar-nav ms-auto text-center"> 
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/login.html">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/carrinho.html">
+                                <svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#cart-fill"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="bg-dark mb-5 pb-5">
+        
+        <div class="container-xxl px-3">
+            <div class="row">
+                <div class="col-12 my-5 pt-5">
+                    <h2 class="text-white fw-bold fs-3">Carrinho de Compra</h2>
+                    <div class="bg-verde-abacate rounded-start-2 rounded-end-5" style="height: 6px; width: 28%;"><hr></div>
+                </div>
+                <div class="col-12 table-responsive">
+                    <table class="table table-borderless table-hover border border-1">
+                        <thead class="table-dark">
+                            <tr class="text-center">
+                                <th>Remover</th>
+                                <th>Imagem</th>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th class="px-5">Quantidade</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <td class="p-5"><svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#trash-fill"></use>
+                                    </svg>
+                                </td>
+                                <td class=" p-3">
+                                    <img src="../assets/Produtos/suplementos (7).png" alt="" class="p-0 mx-auto d-block" width="100">
+                                </td>
+                                <td class="p-4 align-middle text-center">
+                                    100% WHEY REFIL - 900G
+                                </td>
+                                <td class="p-5 fw-bold">
+                                    R$99,00
+                                </td>
+                                <td class="p-5 text-center">
+                                    <input class="w-50 pl-1 text-center fs-6" value="1" min="1" type="number" />
+                                </td>
+                                <td class="p-5 fw-bold">
+                                    R$99,00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-5"><svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#trash-fill"></use>
+                                    </svg>
+                                </td>
+                                <td class=" p-3">
+                                    <img src="../assets/Produtos/acessorios (1).png" alt="" class="img-fluid p-0  mx-auto d-block" width="100">
+                                </td>
+                                <td class="p-4 align-middle text-center">
+                                CINTURÃO DE MUSCULAÇÃO MUVIN
+                                </td>
+                                <td class="p-5 fw-bold">
+                                    R$159,90
+                                </td>
+                                <td class="p-5 text-center">
+                                    <input class="w-50 pl-1 text-center fs-6" value="1" min="1" type="number" />
+                                </td>
+                                <td class="p-5 fw-bold">
+                                    R$159,90
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-5"><svg class="bi" width="24" height="24" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#trash-fill"></use>
+                                    </svg>
+                                </td>
+                                <td class=" p-3">
+                                    <img src="../assets/Produtos/roupas (7).png" alt="" class="img-fluid p-0  mx-auto d-block" width="100">
+                                </td>
+                                <td class="p-4 align-middle text-center">
+                                    OVERSIZED DECREASE PRETO
+                                </td>   
+                                <td class="p-5 fw-bold">
+                                    R$119,90
+                                </td>
+                                <td class="p-5 text-center">
+                                    <input class="w-50 pl-1 text-center fs-6" value="1" min="1" type="number" />
+                                </td>
+                                <td class="p-5 fw-bold">
+                                    R$119,90
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               <section class="container-xxl mt-5">
+                    <div class="row g-4"> 
+                        <div class="col-12 col-md-6">
+                            <div class="bg-white rounded-2">
+                                 <div class="bg-verde-abacate py-2 px-3 rounded-top-2">
+                                    <h5 class="text-black m-0 fs-4 fw-bold">CUPOM</h5>
+                                </div>
+                                <p class="text-black my-3 fs-5 mx-3">Digite aqui seu cupom de desconto caso tenha um:</p>
+                                <div class="d-flex gap-3 p-3">
+                                    <input type="text" placeholder="Código do cupom" class="form-control py-3">
+                                    <button class="btn btn-verde-abacate w-50 fw-bold">APLICAR CUPOM</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="bg-white pb-3 rounded-2">
+                                <div class="w-100 bg-verde-abacate py-2 px-3 rounded-top-2">
+                                    <h5 class="text-vlack m-0 fs-4 fw-bold">TOTAL DA COMPRA</h5>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 px-3" >
+                                    <p class="fw-medium">Subtotal</p>
+                                    <p class="fs-5">R$358,70</p>
+                                </div>
+                                <div class="d-flex justify-content-between px-3 ">
+                                    <p class="fw-medium">Frete</p>
+                                    <p class="fs-5">R$30,90</p>
+                                </div>
+                                <hr class="border border-3 border-dark">
+                                <div class="d-flex justify-content-between px-3 py-2">
+                                    <p class="fw-medium">TOTAL</p>
+                                    <p class="fs-5">R$388,70</p>
+                                </div>
+                                <div class="d-flex justify-content-end px-3">
+                                <button class="btn btn-verde-abacate ms-auto px-5 py-3 fw-bold">COMPRAR AGORA</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="border-top text-muted position-bottom-0 bg-light">
+        <div class="container row  mx-auto pt-5 px-4 gx-5">
+            <div class="col-12 col-lg-3 col-md-4">
+                <img src="../assets/imagens/Logo.png" alt="" class="img-fluid">
+                <p>A DEACRESE é uma loja online voltada ao público fitness, um projeto para demostrar a utilização do Bootstrap 5 para garantir responsividade e um visual moderno.</p>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Ajuda e Suporte</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Conta</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Troca ou Devoluções</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Sobre Entrega</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Política de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Desenvolvedores</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Emanuel Frankielson</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Hanrry Julio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Italo Dannyel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-decoration-none text-muted">Saylon Batista</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-3 col-md-4">
+                <h6>Fale Conosco</h6>
+                <ul class="list-unstyled text-start">
+                    <li>
+                        <p>Decreaseoficial@gmail.com.br</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container row  mx-auto  justify-content-center">
+            <div class="col-12 col-md-6">
+                <img src="../assets/imagens/formas de pagamento.png" alt="" class=" img-fluid p-4 align-self-center">
+            </div>
+            <div class="col-12 col-md-6 my-auto text-center align-self-center text-nowrap">
+                <p>&copy; 2025 - Todos os direitos Reservados a Decrease</p>
+            </div>
+        </div>
+    </footer>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>    
+</body>
+</html>

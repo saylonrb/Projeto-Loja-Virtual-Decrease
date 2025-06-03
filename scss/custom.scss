@@ -1,0 +1,13 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+// Adiciona sua cor personalizada
+$custom-colors: (
+  "verde-abacate": #D2FF00
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Agora importa o Bootstrap completo (depois das mudanças)
+@import "../node_modules/bootstrap/scss/bootstrap";
+
