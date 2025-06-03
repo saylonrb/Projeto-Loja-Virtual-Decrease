@@ -54,8 +54,8 @@ A proposta do projeto é demonstrar a aplicação de tecnologias web com boas pr
 
 Este projeto foi desenvolvido por:
 
-- **Emanuel Frankielson**
-- **Hanrry Julio**
+- **Emanuel Frankielson** 
+- **Hanrry Julio** - hanrrysantos
 - **Italo Dannyel**
 - **Saylon Batista**
 
